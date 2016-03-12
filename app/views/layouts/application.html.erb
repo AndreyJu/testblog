@@ -7,6 +7,32 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="sidebar">
+
+  	<div id="logo">
+
+  	<%= link_to root_path do %>
+      <%= image_tag "logo.svg" %>
+    <% end %>
+    
+    </div>
+
+    <ul>
+      <li class="category">Website</li>
+      <li><%= link_to "Blog", root_path%></li>
+      <li>About</li>
+    </ul>
+
+    <ul>
+      <li class="category">Social</li>
+      <li><a href="">Facebook</a></li>
+      <li><a href="">GitHub</a></li>
+      <li><a href="">Upwork</a></li>
+      <li><a href="">Vkontakte</a></li>
+    </ul>
+  </div>
+
+  <p class="sing_in">Admin login</p>
 
 <%= yield %>
 
